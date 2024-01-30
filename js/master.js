@@ -118,7 +118,7 @@ randomBackEl.forEach(span => {
 let landingPage = document.querySelector(".landing");
 
 //Get Array Of Imgs
-let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg","05.jpg"];
+let imgsArray = ["photo1.jpg","photo2.jpg", "photo3.jpg", "photo4.jpg", "photo5.jpg","photo6.jpg", "photo7.jpg", "photo1.jpg"];
 
 
 // Function To Randomize Imgs
@@ -138,17 +138,17 @@ function randomizeImgs() {
 randomizeImgs();
 
 
-// Select Skills Selector
-let OurSkills = document.querySelector(".skills");
+// Select services Selector
+let Ourservices = document.querySelector(".services");
 
 window.onscroll = function () {
     
     
-    // Skills Offset Top
-    let skillsOffsetTop = OurSkills.offsetTop;
+    // services Offset Top
+    let servicesOffsetTop = Ourservices.offsetTop;
 
-    // Skills Outer Height
-    let skillsOuterHeight = OurSkills.offsetHeight;
+    // services Outer Height
+    let servicesOuterHeight = Ourservices.offsetHeight;
 
     // Window Height
     let windowHeight = this.innerHeight;
@@ -156,11 +156,11 @@ window.onscroll = function () {
     // window ScrollTop
     let windowScrollTop = this.pageYOffset;
 
-    if (windowScrollTop > (skillsOffsetTop + skillsOuterHeight - windowHeight)) {
+    if (windowScrollTop > (servicesOffsetTop + servicesOuterHeight - windowHeight)) {
 
-        let allSkills = document.querySelectorAll(".skill-box .skill-progress span");
+        let allservices = document.querySelectorAll(".skill-box .skill-progress span");
 
-        allSkills.forEach(skill => {
+        allservices.forEach(skill => {
 
             skill.style.width = skill.dataset.progress;
 
@@ -380,35 +380,35 @@ toggleBtn.onclick = function (e) {
 }
 
 // Click Anywhere Outside Menu And Toggle Button
-document.addEventListener("click", (e) => {
+// document.addEventListener("click", (e) => {
 
-    if (e.target !== toggleBtn && e.target !== tLinks) {
+//     if (e.target !== toggleBtn && e.target !== tLinks) {
 
-        // Check If Menu Is Open
-        if (tLinks.classList.contains("open")) {
+//         // Check If Menu Is Open
+//         if (tLinks.classList.contains("open")) {
 
-            // Toggle Class "menu-active" On Button
-            toggleBtn.classList.toggle("menu-active");
+//             // Toggle Class "menu-active" On Button
+//             toggleBtn.classList.toggle("menu-active");
             
-            // Toggle Class "Open" On Links
-            tLinks.classList.toggle("open");
+//             // Toggle Class "Open" On Links
+//             tLinks.classList.toggle("open");
 
-        }
+//         }
 
-    }
-});
+//     }
+// });
 
 // Stop Propagation On Menu
-tLinks.onclick = function (e) {
-    e.stopPropagation();
-}
+// tLinks.onclick = function (e) {
+//     e.stopPropagation();
+// }
 
 // Typewriter Effects with js
 
 let i = 0,
 text;
 
-text = "copyright by Laith Ahmed 2021"
+text = "copyright by mazraeat alabqar 2024"
 
 function typing () {
   if (i<text.length) {
